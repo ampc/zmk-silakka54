@@ -20,7 +20,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: lily58_lef tnice_view_adapter nice_view_gem
+    shield: lily58_left nice_view_adapter nice_view_gem
     artifact-name: keyboard_left
   - board: nice_nano_v2
     shield: lily58_right nice_view_adapter nice_view_gem
@@ -28,3 +28,10 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: settings_reset
+  # Test builds with the stock nice_view shield to rule out a config vs hardware issue
+  - board: nice_nano_v2
+    shield: lily58_left nice_view_adapter nice_view
+    artifact-name: keyboard_left_stock_view
+  - board: nice_nano_v2
+    shield: lily58_right nice_view_adapter nice_view
+    artifact-name: keyboard_right_stock_view
