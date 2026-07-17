@@ -8,6 +8,9 @@ manifest:
       # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: m165437 #custom view
       url-base: https://github.com/M165437 #custom view
+    # support nice_oled and nice_epaper
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
