@@ -93,12 +93,14 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
+        /* Fn (right thumb) + Num (left pinky) is an easy cross-hand chord,
+         * unlike Fn+Sym which both sit on the same thumb cluster. */
         mouse_mac {
-            if-layers = <MAC_FN MAC_SYM>;
+            if-layers = <MAC_FN MAC_NUM>;
             then-layer = <MOUSE>;
         };
         mouse_win {
-            if-layers = <WIN_FN WIN_SYM>;
+            if-layers = <WIN_FN WIN_NUM>;
             then-layer = <MOUSE>;
         };
     };
